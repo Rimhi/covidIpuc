@@ -16,7 +16,7 @@ Para instalar el programa tenemos que tener descargado un servidor local con una
 
 una vez instalado procedemos a descargar e instalar composer  
 
--https://getcomposer.org/download/ -> le damos click en Composer-Setup.exe - y automaticamente se hace la descarga, una vez descargado procedemos a la instalacion
+- https://getcomposer.org/download/ -> le damos click en Composer-Setup.exe - y automaticamente se hace la descarga, una vez descargado procedemos a la instalacion
 
 - ahora procedemos a descargar el programa covid ipuc desde este lugar en la parte superior hay un boton que dice descargar y lo descarga como zip, nos dirigimis al disco C luego a laragon luego a www y dentro de esa carpeta descomprimimos el zip
 
