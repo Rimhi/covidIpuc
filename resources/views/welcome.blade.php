@@ -81,21 +81,21 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Iglesia Pentecostal Unida de Colombia
+                    Iglesia Pentecostal Unida de Colombia <img src="{{ asset('img/16078aa09f87fd7503a54499b4a2d531_html_c4d92db7.gif') }}">
                 </div>
                 <div class="m-b-md">
                    Desarrollado por: Ricardo Monterrosa Higuita
                 </div>
                 <br>
                 <div class="links">
-                    <a href="https://laravel.com/docs">Facebook</a>
-                    <a href="https://laracasts.com">Github</a>
-                    <a href="https://laravel-news.com">Instagram</a>
+                    <a href="https://www.facebook.com/ricardo.monterrosahiguita">Facebook</a>
+                    <a href="https://github.com/Rimhi">Github</a>
+                    <a href="https://www.instagram.com/_ricardo_monterrosa_/?hl=es-la">Instagram</a>
                 </div>
                 <div class="m-b-md">
                     <br>
                     <br>
-                   Whatsapp: 3108265084 - Correo: rimhi7@gmail.com
+                   Whatsapp: 3002729843 - Correo: rimhi7@gmail.com
                 </div>
             </div>
         </div>

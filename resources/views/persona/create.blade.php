@@ -5,14 +5,14 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Registro de personas') }}</div>
+                <div class="card-header titulo">{{ __('Registro de personas') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('persona.store') }}">
                         @csrf
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nombres') }}</label>
+                            <label for="name" class="color-texto col-md-4 col-form-label text-md-right" >{{ __('Nombres') }}</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -25,7 +25,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="lastname" class="col-md-4 col-form-label text-md-right">{{ __('Apellidos') }}</label>
+                            <label for="lastname" class="color-texto col-md-4 col-form-label text-md-right">{{ __('Apellidos') }}</label>
 
                             <div class="col-md-6">
                                 <input id="lastname" type="text" class="form-control" name="lastname" value="{{ old('lastname') }}" required autocomplete="lastname" >
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="number_phone" class="col-md-4 col-form-label text-md-right">{{ __('Numero de Telefono') }}</label>
+                            <label for="number_phone" class="color-texto col-md-4 col-form-label text-md-right">{{ __('Numero de Telefono') }}</label>
 
                             <div class="col-md-6">
                                 <input id="number_phone" type="number" class="form-control" name="number_phone" value="{{ old('number_phone') }}" required autocomplete="number_phone" >
@@ -42,7 +42,7 @@
                         </div>
                         
                         <div class="form-group row">
-                            <label for="number_id" class="col-md-4 col-form-label text-md-right">{{ __('Numero de identificacion') }}</label>
+                            <label for="number_id" class="color-texto col-md-4 col-form-label text-md-right">{{ __('Numero de identificacion') }}</label>
 
                             <div class="col-md-6">
                                 <input id="number_id" type="number" class="form-control" name="number_id" value="{{ old('number_id') }}" required autocomplete="number_id" >
@@ -51,11 +51,11 @@
                         </div>
                        
                         <div class="form-group row">
-                            <label for="tipo_documento" class="col-md-4 col-form-label text-md-right">{{ __('Tipo de documento') }}</label>
+                            <label for="tipo_documento" class="color-texto col-md-4 col-form-label text-md-right">{{ __('Tipo de documento') }}</label>
 
                             <div class="col-md-6">
                                 <!--<input id="tipo_documento" type="text" class="form-control" name="tipo_documento" value="{{ old('tipo_documento') }}" required autocomplete="number_id" >-->
-                                    <select class="form-control" id="tipo_documento" name="tipo_documento" required>
+                                    <select class="form-control color-texto" id="tipo_documento" name="tipo_documento" required>
                                     <option>C.C</option>
                                     <option>T.I</option>
                                     <option>C.E</option>
@@ -64,7 +64,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="edad" class="col-md-4 col-form-label text-md-right">{{ __('Edad') }}</label>
+                            <label for="edad" class="color-texto col-md-4 col-form-label text-md-right">{{ __('Edad') }}</label>
 
                             <div class="col-md-6">
                                 <input id="edad" type="number" class="form-control" name="edad" value="{{ old('edad') }}" required autocomplete="edad" >
@@ -72,7 +72,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="direccion" class="col-md-4 col-form-label text-md-right">{{ __('Direccion') }}</label>
+                            <label for="direccion" class="color-texto col-md-4 col-form-label text-md-right">{{ __('Direccion') }}</label>
 
                             <div class="col-md-6">
                                 <input id="direccion" type="text" class="form-control" name="direccion" value="{{ old('direccion') }}" required autocomplete="direccion" >
@@ -80,7 +80,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="cargo" class="col-md-4 col-form-label text-md-right">{{ __('Cargo') }}</label>
+                            <label for="cargo" class="color-texto col-md-4 col-form-label text-md-right">{{ __('Cargo') }}</label>
 
                             <div class="col-md-6">
                                 <input id="cargo" type="text" class="form-control" name="cargo" value="{{ old('cargo') }}" required autocomplete="cargo" >
@@ -89,7 +89,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Direccion de correo') }}</label>
+                            <label for="email" class="color-texto col-md-4 col-form-label text-md-right">{{ __('Direccion de correo') }}</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
@@ -102,21 +102,21 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="eps" class="col-md-4 col-form-label text-md-right">{{ __('EPS') }}</label>
+                            <label for="eps" class="color-texto col-md-4 col-form-label text-md-right">{{ __('EPS') }}</label>
 
                             <div class="col-md-6">
                                 <input id="eps" type="text" class="form-control" name="eps" value="{{ old('eps') }}" required autocomplete="eps" >
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="arl" class="col-md-4 col-form-label text-md-right">{{ __('ARL') }}</label>
+                            <label for="arl" class="color-texto col-md-4 col-form-label text-md-right">{{ __('ARL') }}</label>
 
                             <div class="col-md-6">
                                 <input id="arl" type="text" class="form-control" name="arl" value="{{ old('arl') }}" required autocomplete="arl" >
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="nombre_contacto" class="col-md-4 col-form-label text-md-right">{{ __('Nombre de contacto') }}</label>
+                            <label for="nombre_contacto" class="color-texto col-md-4 col-form-label text-md-right">{{ __('Nombre de contacto') }}</label>
 
                             <div class="col-md-6">
                                 <input id="nombre_contacto" type="text" class="form-control" name="nombre_contacto" value="{{ old('nombre_contacto') }}" required autocomplete="nombre_contacto" >
@@ -124,7 +124,7 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="numero_contacto" class="col-md-4 col-form-label text-md-right">{{ __('Numero de contacto') }}</label>
+                            <label for="numero_contacto" class="color-texto col-md-4 col-form-label text-md-right">{{ __('Numero de contacto') }}</label>
 
                             <div class="col-md-6">
                                 <input id="numero_contacto" type="text" class="form-control" name="numero_contacto" value="{{ old('numero_contacto') }}" required autocomplete="nombre_contacto" >
