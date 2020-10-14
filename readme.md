@@ -1,73 +1,35 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
+Covid Ipuc
 </p>
 
-## About Laravel
+## Acerca del programa
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Covid Ipuc es una plataforma creada para resolver la necesidad que hay en los templos de mantener un control de registros de las personas que ingresan, genera 4 reportes, los ingresos de las personas con sus preguntas, el registro de miembros, un acta que se firma una unica vez, y el ingreso del grupo de apoyo(ujieres)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Guia de instalacion 
+Para instalar el programa tenemos que tener descargado un servidor local con una version reciente de php, vamos a descargar el siguiente programa
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- https://laragon.org/download/ -->laragon es servidor local, gestor de bases de datos, nos ayudara almacenar los datos del aplicativo ( vamos a descargar la edicion que dice "laragon full") 
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+una vez instalado procedemos a descargar e instalar composer  
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+-https://getcomposer.org/download/ -> le damos click en Composer-Setup.exe - y automaticamente se hace la descarga, una vez descargado procedemos a la instalacion
 
-## Laravel Sponsors
+- ahora procedemos a descargar el programa covid ipuc desde este lugar en la parte superior hay un boton que dice descargar y lo descarga como zip, nos dirigimis al disco C luego a laragon luego a www y dentro de esa carpeta descomprimimos el zip
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+-inicializacion: para iiciar el prgrama abrimos el programa laragon, y le damos en iniciar todo, luego le damos click en bases de datos y donde dice laragon con figura de delfin le damos en crear nueva base de datos, el nombre le pondremos "covidipuc", luego de eso le damos click en terminal e igresamos lo siguiente cd C:/laragon/www/covidipuc-master y presionamos la tecla enter
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
+- luego escribimos el comando composer install, esperamos unos minutos
 
-## Contributing
+- luego escribimos el comando php artisan migrate y si nos pide confirmacion le damos que si
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- luego escribimos el comando php artisan serve y nos aparecera una direccion http y esa es la que ponemos en el navegador, ya tendremos el aplicativo listo para usar 
 
 ## License
 
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-"# covidIpuc" 
+EEste software es de codigo abierto, el que desee puede disponer de el, derechos reservados ©2020
+
+"# covidIpuc realizado por Ricardo Monterrosa Higuita" 
